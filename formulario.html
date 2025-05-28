@@ -12,13 +12,15 @@
   <h1>Bienvenidos a mi fiesta</h1>
   <h2>Por favor, confirmar asistencia:</h2>
 
-  <form class="formulario">
-    Nombre <input type="text" name="name" id="name">
+  <form id="form" class="formulario"><!-- Cree el Id form -->
+    <label for="name">Nombre </label> <!-- Puse el nombre en una etiqueta label para vincular el texto descriptivo -->
+    <input type="text" name="name" id="name">
     <br />
-    Edad <input type="number" name="age" id="age">
+    <label for="age">Edad</label> <!-- Puse el nombre en una etiqueta label para vincular el texto descriptivo -->
+    <input type="number" name="age" id="age">
     <br />
 
-    Nacionalidad
+    <label for="nationality">Nacionalidad</label><!-- Puse el nombre en una etiqueta label para vincular el texto descriptivo -->
     <select name="nationality" id="nationality">
       <option value="ar">Argentina</option>
       <option value="mx">Mexicana</option>
@@ -26,15 +28,16 @@
       <option value="vnzl">Venezolana</option>
     </select>
     <br />
-    <input type="submit">
+
+    <input type="submit" value="Confirmar"> <!-- Hice el botón más descriptivo -->
   </form>
 
-  <div>
+  <div id="lista-de-invitados"> <!-- Actualice el id para la lista de insvitados -->
     <h2>Lista de invitados</h2>
 
   </div>
 
-  <script src="../formulario.js"></script>
+  <script src="./formulario.js"></script> <!-- Actualice la ruta porque aparecia ../formulario.js y es ./formulario.js -->
 </body>
 
 </html>
